@@ -28,5 +28,4 @@ Toqir Ahmad
 
 ## License
 
- - Original template copyright belongs to Horizon UI; see [LICENSE.md](LICENSE.md).
  - Licensed under the MIT License.
