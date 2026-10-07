@@ -6,6 +6,22 @@ const srcPath = fileURLToPath(new URL("./src/", import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: "apexcharts-vendor",
+              test: /node_modules[\\/]apexcharts[\\/]/,
+              maxSize: 350000,
+              priority: 20,
+            },
+          ],
+        },
+      },
+    },
+  },
   resolve: {
     alias: [
       {

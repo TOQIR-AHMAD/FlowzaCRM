@@ -1,14 +1,14 @@
-import React from "react";
+import React, { lazy } from "react";
 
 // Admin Imports
-import MainDashboard from "views/admin/default";
-import NFTMarketplace from "views/admin/marketplace";
-import Profile from "views/admin/profile";
-import DataTables from "views/admin/tables";
-import RTLDefault from "views/rtl/default";
+const MainDashboard = lazy(() => import("views/admin/default"));
+const NFTMarketplace = lazy(() => import("views/admin/marketplace"));
+const Profile = lazy(() => import("views/admin/profile"));
+const DataTables = lazy(() => import("views/admin/tables"));
+const RTLDefault = lazy(() => import("views/rtl/default"));
 
 // Auth Imports
-import SignIn from "views/auth/SignIn";
+const SignIn = lazy(() => import("views/auth/SignIn"));
 
 // Icon Imports
 import {
