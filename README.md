@@ -25,7 +25,3 @@ bun start
 ## Owner
 
 Toqir Ahmad
-
-## License
-
- - Licensed under the MIT License.
